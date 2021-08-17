@@ -17,7 +17,7 @@ jobs:
           tag=$(git describe --tags --abbrev=0)
           release_name="DeepSkyWorkflows-$tag"
           # Pack files
-          7z a -tzip "${release_name}.zip" "./*.js"          
+          7z a -tzip "${release_name}.zip" "./*.js" -r        
 
       - name: Publish
         uses: softprops/action-gh-release@v1
