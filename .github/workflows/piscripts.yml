@@ -6,14 +6,22 @@ on:
 jobs:
   release:
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Build
+        shell: bash
+        run: |
+          tag=$(git describe --tags --abbrev=0)
+          release_name="DeepSkyWorkflows-$tag"
+          # Pack files
+          7z a -tzip "${release_name}.zip" "./*.js"          
+
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:
-          files: "*.js"
+          files: "${release_name}.zip"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
