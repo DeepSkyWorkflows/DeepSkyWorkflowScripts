@@ -1,0 +1,19 @@
+name: Publish
+on:
+  push:
+    tags: 
+      - 'v*'
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Publish
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ["*.js", "LICENSE"]
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

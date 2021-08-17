@@ -4,6 +4,10 @@
 
 Initial releases.
 
+### v0.5
+
+- Refactored for reusability and maintenance. Fixed several bugs. 
+
 ### v0.4
 
 - Implemented Hubble palette script.

@@ -10,9 +10,9 @@ This script will extract luminance and stretch it for a mask.
  *
  * Copyright Jeremy Likness, 2021
  *
- * License: https://github.com/JeremyLikness/DeepSkyWorkflows/LICENSE
+ * License: https://github.com/DeepSkyWorkflows/DeepSkyWorkflowScripts/LICENSE
  *
- * Source: https://github.com/JeremyLikness/DeepSkyWorkflows/tree/master/piscripts
+ * Source: https://github.com/DeepSkyWorkflows/DeepSkyWorkflowScripts
  *
  * mailTo:deepskyworkflows@gmail.com
  */
@@ -21,33 +21,67 @@ This script will extract luminance and stretch it for a mask.
 
 #define TITLE "Luminance Mask"
 
+#ifndef FEATURE
+#define FEATURE "createLumMask"
+#endif
+
+#ifndef DEBUG_CLM
+#define DEBUG_CLM false
+#endif
+
 #include "deepSkyCommon.js"
 
-function genMask(executionState) {
+(function (ds) {
 
-   writeLines('Generating mask...');
-   extractLuminance(executionState, '_LMask');
-   var mask = ImageWindow.windowById(executionState.channels[0][1]).mainView;
-   applySTF(mask);
-   applyHistogramTransformation(mask);
+   ds.debug.register(FEATURE, DEBUG_CLM);
+   ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   writeLines(concatenateStr('Generated mask: ', executionState.channels[0][1]));
-}
+   ds.features.register(FEATURE, {
 
-function main() {
+      genMask: function() {
 
-   let executionState = {};
+         const executionState = ds.getExecutionState();
 
-   writeLines(concatenateStr('v', VERSION, ' invoked'));
+         if (!!!executionState.view.id) {
+            ds.utilities.writeLines("No activew view. Aborting script.");
+            return;
+         }
 
-   if (Parameters.isViewTarget) {
-      executionState.view = Parameters.targetView;
-   }
-   else {
-      executionState.view = ImageWindow.activeWindow.currentView;
-   }
+         ds.utilities.writeLines('Generating mask...');
+         ds.engine.extractLuminance('_LMask');
+         var mask = ImageWindow.windowById(executionState.channels[0][1]).mainView;
+         ds.engine.applySTF(mask);
+         ds.engine.applyHistogramTransformation(mask);
+      
+         ds.utilities.writeLines(ds.utilities.concatenateStr('Generated mask: ', executionState.channels[0][1]));
+      }
+      
+   });
 
-   genMask(executionState);
-}
+   ds.debug[FEATURE].debugLn(
+      'Registered feature: ',
+      JSON.stringify(ds.features[FEATURE]));
 
-main();
+   let bootstrap = ds.engine.bootstrap([
+      {
+         setting: "lumMask",
+         dataType: DataType_Boolean,
+         defaultValue: true,
+         persist: false
+      }
+   ],
+      ds.features[FEATURE].engine.genMask,
+      function () {
+         ds.debug[FEATURE].debugLn('New dialog requested, but script has no UI.');
+         return {
+            execute: function () {
+               ds.features[FEATURE].engine.genMask();
+            }
+         };
+      },
+      FEATURE,
+      true);
+
+   bootstrap();
+
+})(deepSky);

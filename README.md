@@ -19,7 +19,7 @@ See [release notes](./releases.md) for version details.
 
 ## Installation
 
-The first step is to download the scripts. You can either clone this repository, or [download the zip](./piscripts.zip).
+The first step is to download the scripts. You can either clone this repository, or [download the latest release](https://github.com/DeepSkyWorkflows/DeepSkyWorkflowScripts/releases).
 
 Once you have the scripts in a folder, for example, `DeepSkyWorkflows`, you can install with the following steps:
 
