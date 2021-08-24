@@ -21,14 +21,8 @@ them up by finding pixels that deviate from the other two channels and normalizi
 #feature-id    DeepSkyWorkflows > FixRGBPixels
 
 #define TITLE "Fix RGB Pixels"
-
-#ifndef FEATURE
 #define FEATURE "fixRGBPixels"
-#endif
-
-#ifndef DEBUG_FRP
 #define DEBUG_FRP false
-#endif
 
 #include "deepSkyCommon.js"
 
@@ -103,8 +97,8 @@ function frpDialog() {
    this.lblCopyright = new Label(this);
    this.lblCopyright.text = "© 2021, Jeremy Likness";
 
-   this.createNewInstance = ds.ui.align(ds.ui.createBoundCheckbox(dialog, 'createNewInstance',
-      ds.ui.align.ALIGN_RIGHT));
+   this.createNewInstance = ds.ui.align(ds.ui.createBoundCheckbox(dialog, 'createNewInstance'),
+      ds.ui.ALIGN_RIGHT);
 
    // main settings
    this.strengthSlider = ds.ui.createBoundNumericControl(dialog, 'strength',
@@ -144,7 +138,7 @@ function frpDialog() {
    ds.debug.register(FEATURE, DEBUG_FRP);
    ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   ds.features.register(FEATURE, fixRGBEngine);
+   ds.features.register(FEATURE, TITLE, fixRGBEngine);
 
    ds.debug[FEATURE].debugLn(
       'Registered feature: ',

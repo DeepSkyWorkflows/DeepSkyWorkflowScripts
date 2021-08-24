@@ -22,15 +22,8 @@ This script is intended as a starting reference for new scripts.
 */
 
 #define TITLE "Template"
-
-#ifndef FEATURE
 #define FEATURE "template"
-#endif
-
-
-#ifndef DEBUG_TEMPLATE
 #define DEBUG_TEMPLATE false
-#endif
 
 #include "deepSkyCommon.js"
 
@@ -119,7 +112,7 @@ function tDialog() {
    ds.debug.register(FEATURE, DEBUG_TEMPLATE);
    ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   ds.features.register(FEATURE, {
+   ds.features.register(FEATURE, TITLE, {
 
       alert: function (msg) {
          this.debugLn('alert called with parameter', msg.toString());

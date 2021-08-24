@@ -54,7 +54,7 @@ Common utilities used across various scripts.
             for (var arg = 0; arg < arguments.length; ++arg) {
                 var val = arguments[arg];
                 if (arg === 0) {
-                    console.writeln(ds.utilities.concatenateStr('<b>', TITLE, '</b>: ', val));
+                    console.writeln(ds.utilities.concatenateStr('<b>', ds.activeFeature.title, '</b>: ', val));
                 }
                 else {
                     console.writeln(val);

@@ -20,14 +20,8 @@ Transforms red, "smoky" nebula to blueish with higher contrast.
 #feature-id    DeepSkyWorkflows > ApplyHubbleToRGB
 
 #define TITLE "Apply Hubble Palette to RGB"
-
-#ifndef FEATURE
 #define FEATURE "applyHubbleToRGB"
-#endif
-
-#ifndef DEBUG_AH
 #define DEBUG_AH false
-#endif
 
 #include "deepSkyCommon.js"
 #include "applyHubbleToRGB/engine.js"
@@ -38,7 +32,7 @@ Transforms red, "smoky" nebula to blueish with higher contrast.
    ds.debug.register(FEATURE, DEBUG_AH);
    ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   ds.features.register(FEATURE, hubbleEngine, { data: { toClose: [] }});
+   ds.features.register(FEATURE, TITLE, hubbleEngine, { data: { toClose: [] }});
 
    ds.debug[FEATURE].debugLn(
       'Registered feature: ',

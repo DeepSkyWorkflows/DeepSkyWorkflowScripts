@@ -26,14 +26,8 @@ This script implements my workflow for deconvolution. It will create:
 #feature-id    DeepSkyWorkflows > GenerateDeconSupport
 
 #define TITLE "Generate Decon Support"
-
-#ifndef DEBUG_GDS
 #define DEBUG_GDS false
-#endif
-
-#ifndef FEATURE
 #define FEATURE "generateDeconSupport"
-#endif
 
 #include "deepSkyCommon.js"
 #include "./generateDeconSupport/engine.js"
@@ -44,7 +38,7 @@ This script implements my workflow for deconvolution. It will create:
    ds.debug.register(FEATURE, DEBUG_GDS);
    ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   ds.features.register(FEATURE, deconEngine, { masks: {} });
+   ds.features.register(FEATURE, TITLE, deconEngine, { masks: {} });
 
    ds.debug[FEATURE].debugLn(
       'Registered feature: ',

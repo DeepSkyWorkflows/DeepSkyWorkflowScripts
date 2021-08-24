@@ -315,7 +315,11 @@ User interface helpers.
 
         createDialog: function (dlgFn) {
 
-            ds.debug.ui.debugLn("createDialogInvoked for", TITLE, "version", VERSION);
+            ds.debug.ui.debugLn(
+                "createDialogInvoked for", 
+                ds.activeFeature.title, 
+                "version", 
+                ds.version);
 
             let template = function () {
                 this.__base__ = Dialog;
@@ -333,7 +337,10 @@ User interface helpers.
             template.prototype = new Dialog;            
             const dialog = new template;
             
-            dialog.windowTitle = ds.utilities.concatenateStr(TITLE, ' v', VERSION);
+            dialog.windowTitle = ds.utilities.concatenateStr(
+                ds.activeFeature.title, 
+                ' v', 
+                ds.version);
             dialog.adjustToContents(); 
             
             return dialog;

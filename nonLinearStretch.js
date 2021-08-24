@@ -21,15 +21,8 @@ using luminance masks and curves transformations.
 #feature-id  DeepSkyWorkflows > NonLinearStretch
 
 #define TITLE "Non-Linear Stretch"
-
-#ifndef FEATURE
 #define FEATURE "nonLinearStretch"
-#endif
-
-
-#ifndef DEBUG_NLS
 #define DEBUG_NLS false
-#endif
 
 #include "deepSkyCommon.js"
 
@@ -181,7 +174,7 @@ function nlsDialog() {
    ds.debug.register(FEATURE, DEBUG_NLS);
    ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   ds.features.register(FEATURE, {
+   ds.features.register(FEATURE, TITLE, {
 
       getCurvesTransformation: function (up) {
 

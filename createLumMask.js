@@ -20,14 +20,8 @@ This script will extract luminance and stretch it for a mask.
 #feature-id    DeepSkyWorkflows > CreateLumMask
 
 #define TITLE "Luminance Mask"
-
-#ifndef FEATURE
 #define FEATURE "createLumMask"
-#endif
-
-#ifndef DEBUG_CLM
 #define DEBUG_CLM false
-#endif
 
 #include "deepSkyCommon.js"
 
@@ -36,7 +30,7 @@ This script will extract luminance and stretch it for a mask.
    ds.debug.register(FEATURE, DEBUG_CLM);
    ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   ds.features.register(FEATURE, {
+   ds.features.register(FEATURE, TITLE, {
 
       genMask: function() {
 

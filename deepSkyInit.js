@@ -18,7 +18,7 @@ Creates the global deepsky object.
  */
 
 #ifndef VERSION
-#define VERSION "0.5"
+#define VERSION "0.6"
 #define DEBUG_GLOBAL false
 #endif
 
@@ -69,13 +69,16 @@ var deepSky = function (ds) {
     ds.debug.global.debugLn('GLOBAL DEBUG ON');
 
     ds.features = {
-        register: function (name, feature, initialState) {
+        register: function (name, title, feature, initialState) {
           
             ds.features[name] = {
+                title: title,
                 engine: feature,
                 executionState: initialState || {},
                 dialog: null
             };
+
+            ds.activeFeature = ds.features[name];
 
             ds.getExecutionState = function () {
                 return ds.features[name].executionState;

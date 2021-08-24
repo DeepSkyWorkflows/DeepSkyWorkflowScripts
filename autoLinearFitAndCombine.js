@@ -23,14 +23,8 @@ then use LRGB to combine them.
 #feature-id    DeepSkyWorkflows > AutoLinearFit
 
 #define TITLE "Auto Linear Fit"
-
-#ifndef FEATURE
 #define FEATURE "autoLinearFit"
-#endif
-
-#ifndef DEBUG_ALF
 #define DEBUG_ALF false
-#endif
 
 #include "deepSkyCommon.js"
 
@@ -276,7 +270,7 @@ function featureDialog() {
    ds.debug.register(FEATURE, DEBUG_ALF);
    ds.debug[FEATURE].debugLn(TITLE, 'debugging is on.');
 
-   ds.features.register(FEATURE, {
+   ds.features.register(FEATURE, TITLE, {
 
       separateChannels: function () {
 

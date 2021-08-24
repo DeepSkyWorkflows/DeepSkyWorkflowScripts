@@ -32,7 +32,7 @@ function hubbleDialog() {
    this.lblHeadLine = new Label(this);
    with (this.lblHeadLine) {
       useRichText = true;
-      text = util.concatenateStr('<b>', TITLE, ' v', VERSION, '</b>');
+      text = util.concatenateStr('<b>', ds.activeFeature.title, ' v', ds.version, '</b>');
    }
 
    // my copyright
