@@ -4,6 +4,10 @@
 
 Initial releases.
 
+### v0.6
+
+- Fixed issue with persistence of title and feature.
+
 ### v0.5
 
 - Refactored for reusability and maintenance. Fixed several bugs. 
