@@ -4,6 +4,10 @@
 
 Initial releases.
 
+### v0.6.1 
+
+- Patch to pick up latest script versions.
+
 ### v0.6
 
 - Fixed issue with persistence of title and feature.
