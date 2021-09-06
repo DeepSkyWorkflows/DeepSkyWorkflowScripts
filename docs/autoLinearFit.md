@@ -14,6 +14,8 @@ This script is intended for use on linear (non-stretched) images with skewed RGB
 4. Run LinearFit using the reference channel on the other channels
 5. Use LRGBCombination to merge the fit channels back into the original image
 
+[Video: Using Auto-Linear Fit](https://youtu.be/adN3yi84hK4)
+
 Parameters allow you to use max instead of min, generate a new image instance, and control noise reduction.
 
 ![Auto Linear Fit Example](./images/autolinearfitexample.png)
