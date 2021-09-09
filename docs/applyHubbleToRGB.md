@@ -8,6 +8,8 @@
 
 This script is intended to transform a traditionally processed (stretched, non-linear) image to use a Hubble-style palette. It is most impactful in nebula with dark structures like M16 (the Eagle Nebula) with its "Pillars of Creation."
 
+[Watch the video demonstration](https://youtu.be/I-9wUgXXokU)
+
 The standard workflow:
 
 1. Use StarNet++ to remove the stars 
