@@ -18,7 +18,7 @@ Creates the global deepsky object.
  */
 
 #ifndef VERSION
-#define VERSION "0.6"
+#define VERSION "0.7"
 #define DEBUG_GLOBAL false
 #endif
 

@@ -4,6 +4,10 @@
 
 Initial releases.
 
+### v0.7
+
+- Added Deep Denoise.
+
 ### v0.6.1 
 
 - Patch to pick up latest script versions.

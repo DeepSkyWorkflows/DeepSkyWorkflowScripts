@@ -16,6 +16,7 @@ See [release notes](./releases.md) for version details.
 |[![Thumbnail](./docs/images/nonlinearstretchexample_thumb.png)](./docs/images/nonlinearstretchexample.png)|[Non-Linear Stretch](./docs/nonLinearStretch.md)|Helps tweak contrast by increasing foreground and decreasing background with progressive masks.
 |¯\\_(ツ)_/¯|[Generate Decon Support](./docs/generateDeconSupport.md)|Creates the masks I use for deconvolution.|
 |[![Thumbnail](./docs/images/pillars_thumb.png)](./docs/images/pillars.png)|[Hubble Palette to RGB](./docs/applyHubbleToRGB.md)|Applies the "Hubble palette" to images.|
+|[![Thumbnail](./docs/images/denoiseexample_thumb.png)](./docs/images/denoiseexample_thumb.png)|[Deep Denoise](./docs/deepDenoise.md)|Removes noise from linear (non-stretched) images.|
 
 ## Installation
 
