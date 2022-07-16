@@ -17,7 +17,7 @@ Transforms red, "smoky" nebula to blueish with higher contrast.
  *
  */
 
-#feature-id    DeepSkyWorkflows > ApplyHubbleToRGB
+#feature-id    ApplyHubbleToRGB : DeepSkyWorkflows > ApplyHubbleToRGB
 
 #define TITLE "Apply Hubble Palette to RGB"
 #define FEATURE "applyHubbleToRGB"

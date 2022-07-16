@@ -17,9 +17,7 @@ This script is intended as a starting reference for new scripts.
  *
  */
 
-/*
-#feature-id  DeepSkyWorkflows > Template
-*/
+#script-id  Template
 
 #define TITLE "Template"
 #define FEATURE "template"

@@ -18,6 +18,7 @@ capabilities.
  *
  */
 
+#script-id DeepSkySettingsManager
 #include "deepSkyInit.js"
 
 #define DEBUG_SETTINGS false

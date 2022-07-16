@@ -23,7 +23,7 @@ This script implements my workflow for deconvolution. It will create:
  * mailTo:deepskyworkflows@gmail.com
  */
 
-#feature-id    DeepSkyWorkflows > GenerateDeconSupport
+#feature-id  GenerateDeconSupport :  DeepSkyWorkflows > GenerateDeconSupport
 
 #define TITLE "Generate Decon Support"
 #define DEBUG_GDS false

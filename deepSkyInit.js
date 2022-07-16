@@ -17,8 +17,10 @@ Creates the global deepsky object.
  *
  */
 
+#script-id DeepSkyInit
+
 #ifndef VERSION
-#define VERSION "0.7"
+#define VERSION "1.0"
 #define DEBUG_GLOBAL false
 #endif
 

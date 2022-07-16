@@ -18,7 +18,7 @@ them up by finding pixels that deviate from the other two channels and normalizi
  * mailTo:deepskyworkflows@gmail.com
  */
 
-#feature-id    DeepSkyWorkflows > FixRGBPixels
+#feature-id  FixRGBPixels :  DeepSkyWorkflows > FixRGBPixels
 
 #define TITLE "Fix RGB Pixels"
 #define FEATURE "fixRGBPixels"

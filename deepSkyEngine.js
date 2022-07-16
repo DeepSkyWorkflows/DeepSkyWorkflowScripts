@@ -17,6 +17,8 @@ Engine functions.
  *
  */
 
+#script-id DeepSkyEngine
+
 #include "deepSkyInit.js"
 
 #ifndef DEBUG_ENGINE

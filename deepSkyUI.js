@@ -17,6 +17,8 @@ User interface helpers.
  *
  */
 
+#script-id DeepSkyUI
+
 #include <pjsr/DataType.jsh>
 #include <pjsr/StdButton.jsh>
 #include <pjsr/FrameStyle.jsh>

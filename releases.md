@@ -1,5 +1,13 @@
 # Deep Sky Script Releases
 
+## v1
+
+Version 1.
+
+### v1.0.0
+
+- Added signed code.
+
 ## v0
 
 Initial releases.

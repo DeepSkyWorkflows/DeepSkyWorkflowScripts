@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xri version="1.0">
+  <description>
+     <p>
+		Deep Sky Workflows Scripts at https://github.com/DeepSkyWorkflows/https://github.com/DeepSkyWorkflows/DeepSkyWorkflowScripts
+     </p>
+  </description>
+   <platform os="all" arch="noarch" version="1.6.9:2.0.0">
+      <package fileName="v1.0.0.tar.gz"
+               sha1="tbd"
+               type="script"
+               releaseDate="20220716">
+         <title>
+            Deep Sky Workflow Scripts
+         </title>
+         <description>
+            <p>
+               Collection of scripts to assist with your workflows
+            </p>
+            <p>Currently contains:
+               <ul>
+                  <li>Apply Hubble Palette</li>
+                  <li>Auto Linear-Fit and Combine</li>
+                  <li>Create Stretched Luminance Match</li>
+                  <li>Deep DeNoise</li>
+                  <li>Fix RGB Pixels</li>
+                  <li>Generate Deconvolution Support Files</li>
+                  <li>Non-linear stretch</li>
+               </ul>
+            </p>
+            <p>Documentation online in our <a href="https://github.com/DeepSkyWorkflows/DeepSkyWorkflowScripts">GitHub repo</a>.
+            </p>
+         </description>
+      </package>
+   </platform>
+</xri>

@@ -23,6 +23,8 @@ This script implements my workflow for deconvolution. It will create:
  * mailTo:deepskyworkflows@gmail.com
  */
 
+#script-id DeconEngine
+
 let deconEngine = (function (ds) {
     return {
         doExtractLuminance: function () {

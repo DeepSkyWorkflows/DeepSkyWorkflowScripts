@@ -18,7 +18,7 @@ using luminance masks and curves transformations.
  *
  */
 
-#feature-id  DeepSkyWorkflows > NonLinearStretch
+#feature-id NonLinearStretch : DeepSkyWorkflows > NonLinearStretch
 
 #define TITLE "Non-Linear Stretch"
 #define FEATURE "nonLinearStretch"

@@ -17,6 +17,8 @@ Common utilities used across various scripts.
  *
  */
 
+#script-id DeepSkyUtils
+
 #include "deepSkyInit.js"
 
 #define DEBUG_UTILITY false

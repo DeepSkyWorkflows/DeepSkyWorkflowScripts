@@ -21,7 +21,7 @@ This script implements my workflow for deconvolution. It will:
  * mailTo:deepskyworkflows@gmail.com
  */
 
-#feature-id    DeepSkyWorkflows > DeepDenoise
+#feature-id   DeepDenoise : DeepSkyWorkflows > DeepDenoise
 
 #define TITLE "Deep Denoise"
 #define DEBUG_DD false

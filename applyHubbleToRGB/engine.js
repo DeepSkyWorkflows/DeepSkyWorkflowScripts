@@ -17,6 +17,8 @@ Transforms red, "smoky" nebula to blueish with higher contrast.
  *
  */
 
+#script-id ApplyHubbleEngine
+
 let hubbleEngine = (function (ds) {
    return {
       preserveStars: function () {

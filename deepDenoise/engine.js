@@ -22,6 +22,8 @@ This script implements my workflow for denoising linear (before stretching) imag
  * mailTo:deepskyworkflows@gmail.com
  */
 
+#script-id DeepDenoiseEngine
+
 let denoiseEngine = (function (ds) {
     return {
         doExtractLuminance: function () {

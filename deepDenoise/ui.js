@@ -16,6 +16,8 @@ This script implements the UI.
  * mailTo:deepskyworkflows@gmail.com
  */
 
+#script-id DeepDenoiseUI
+
 function denoiseDialog() {
     let dialog = this;
     let ds = dialog.ds;

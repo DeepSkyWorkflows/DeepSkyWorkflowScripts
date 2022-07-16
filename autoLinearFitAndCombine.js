@@ -20,7 +20,7 @@ then use LRGB to combine them.
  * mailTo:deepskyworkflows@gmail.com
  */
 
-#feature-id    DeepSkyWorkflows > AutoLinearFit
+#feature-id  AutoLinearFit : DeepSkyWorkflows > AutoLinearFit
 
 #define TITLE "Auto Linear Fit"
 #define FEATURE "autoLinearFit"

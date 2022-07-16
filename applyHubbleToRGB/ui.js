@@ -17,6 +17,8 @@ Transforms red, "smoky" nebula to blueish with higher contrast.
  *
  */
 
+#script-id ApplyHubbleUI
+
 function hubbleDialog() {
 
    let dialog = this;

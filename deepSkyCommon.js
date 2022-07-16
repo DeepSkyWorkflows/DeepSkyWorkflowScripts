@@ -12,6 +12,8 @@ Imports all of the core Deep Sky modules.
  * mailTo:deepskyworkflows@gmail.com
  */
 
+#script-id DeepSkyCommon
+
 #include "deepSkyUtils.js"
 #include "deepSkySettingsManager.js"
 #include "deepSkyUI.js"

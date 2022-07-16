@@ -23,6 +23,8 @@ This script implements my workflow for deconvolution. It will create:
  * mailTo:deepskyworkflows@gmail.com
  */
 
+#script-id DeconUI
+
 function gdsDialog() {
     let dialog = this;
     let ds = dialog.ds;
