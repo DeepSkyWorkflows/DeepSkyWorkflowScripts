@@ -5,7 +5,7 @@
 		Deep Sky Workflows Scripts at https://github.com/DeepSkyWorkflows/https://github.com/DeepSkyWorkflows/DeepSkyWorkflowScripts
      </p>
   </description>
-   <platform os="all" arch="noarch" version="1.6.9:2.0.0">
+   <platform os="all" arch="noarch" version="1.8.9:2.0.0">
       <package fileName="v1.0.0.tar.gz"
                sha1="tbd"
                type="script"

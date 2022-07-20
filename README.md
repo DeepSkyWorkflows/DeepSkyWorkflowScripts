@@ -8,6 +8,8 @@ These are the active scripts that are available.
 
 See [release notes](./releases.md) for version details.
 
+> **NOTE** The scripts are now available via the PixInsight update system. We are working on signing issues but for now you can navigate to Resources -> Manage Update Repositories and add the URL: [https://deepskyworkflows.com/pixinsight](https://deepskyworkflows.com/pixinsight/)
+
 |Example (click for full size)|Script (click for documentation and source code)|Description|
 |---|---|---|
 |[![Thumbnail](./docs/images/autolinearfitexample_thumb.png)](./docs/images/autolinearfitexample.png)|[Auto-Linear Fit](./docs/autoLinearFit.md)|A script for normalizing RGB channels.|
@@ -19,6 +21,14 @@ See [release notes](./releases.md) for version details.
 |[![Thumbnail](./docs/images/denoiseexample_thumb.png)](./docs/images/denoiseexample_thumb.png)|[Deep Denoise](./docs/deepDenoise.md)|Removes noise from linear (non-stretched) images.|
 
 ## Installation
+
+The easiest way is to go to Resources, then Manage Update Repositories, and add the following URL:
+
+`https://deepskyworkflows.com/pixinsight`
+
+When you restart, the scripts will be installed.
+
+Here are the old instructions for manually installing:
 
 The first step is to download the scripts. You can either clone this repository, or [download the latest release](https://github.com/DeepSkyWorkflows/DeepSkyWorkflowScripts/releases).
 
