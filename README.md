@@ -19,6 +19,8 @@ See [release notes](./releases.md) for version details.
 |¯\\_(ツ)_/¯|[Generate Decon Support](./docs/generateDeconSupport.md)|Creates the masks I use for deconvolution.|
 |[![Thumbnail](./docs/images/pillars_thumb.png)](./docs/images/pillars.png)|[Hubble Palette to RGB](./docs/applyHubbleToRGB.md)|Applies the "Hubble palette" to images.|
 |[![Thumbnail](./docs/images/denoiseexample_thumb.png)](./docs/images/denoiseexample_thumb.png)|[Deep Denoise](./docs/deepDenoise.md)|Removes noise from linear (non-stretched) images.|
+|[![Thumbnail](./docs/images/simplestretch_thumb.png)](./docs/images/simplestretch_thumb.png)|[Simple Stretch](./docs/simpleStretch.md)|Applies a Screen Transfer Function followed by a Histogram Transformation.|
+||Star Trail Magic|(documentation coming soon) Make star trails or arcs and even animate them for timelapses.
 
 ## Installation
 

@@ -1,5 +1,14 @@
 # Deep Sky Script Releases
 
+## v2
+
+Version 2.
+
+### v2.0.0
+
+- Added simple stretch.
+- Added star trails magic.
+
 ## v1
 
 Version 1.
